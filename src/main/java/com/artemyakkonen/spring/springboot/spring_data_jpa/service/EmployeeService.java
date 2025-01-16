@@ -1,8 +1,8 @@
-package com.artemyakkonen.spring.springboot.springboot_rest.service;
+package com.artemyakkonen.spring.springboot.spring_data_jpa.service;
 
 
 
-import com.artemyakkonen.spring.springboot.springboot_rest.entity.Employee;
+import com.artemyakkonen.spring.springboot.spring_data_jpa.entity.Employee;
 
 import java.util.List;
 
@@ -12,4 +12,6 @@ public interface EmployeeService {
     public Employee saveEmployee(Employee employee);
     public Employee getEmployee(int id);
     public void deleteEmployee(int id);
+
+    public List<Employee> findAllByName(String name);
 }
